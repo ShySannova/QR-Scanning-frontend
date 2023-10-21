@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App>h1{
+  text-align: center;
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px gray;
+  padding-block: 10px;
+}
+
+.main{
+  display: flex;
+  padding-block: 10px;
+  height: 100vh;
+}
+
+.main>div{
+  flex: 1;
+  height: 100%;
+}
+
+.main>div:first-child{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main>div:first-child>div:first-child{
+  border: none!important;
+  width: 100%;
+  
+}
+
+.main>div:first-child>div:first-child>div:first-child{
+  display: none;
+}
+
+.Result-header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+
+.Result-section-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.Result-section-grid>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.Result-section-Nodata{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* ///loginmodal/// */
+
+.login-modal,
+.signup-modal{
+  background-color: rgba(0, 0, 0, 0.466);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper{
+  min-width: 500px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.modal-wrapper>input{
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.modal-wrapper>button{
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: medium;
+}
+
+
+
+.close-btn{
+  width: 20px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+.signUp-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.signUp-btn{
+  padding: 2px 4px;
+}
